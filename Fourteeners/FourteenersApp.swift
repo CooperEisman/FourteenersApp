@@ -2,7 +2,7 @@
 //  FourteenersApp.swift
 //  Fourteeners
 //
-//  Created by devbuild on 2/13/21.
+//  Created by Cooper Eisman on 2/13/21.
 //
 
 import SwiftUI
