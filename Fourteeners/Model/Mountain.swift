@@ -13,7 +13,8 @@ import CoreLocation
 struct Mountain: Hashable, Codable, Identifiable {
 	var id: Int
 	var peak: String
-	var elevation: String
+	var elevationFeet: Int
+	var elevationMeters: Int
 	var range: String
 	var state: String
 	var latitude: Double
