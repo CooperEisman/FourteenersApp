@@ -11,30 +11,33 @@ import MapKit
 
 struct SingleView: View {
     var body: some View {
+		ScrollView {
 		VStack{
 			ZStack {
-				MapBlock(coordinate: CLLocationCoordinate2D(latitude: 34.011_286, longitude: -116.166_868))
-					.frame(height: 315.0)
-					.ignoresSafeArea(edges: .top)
+				MapBlock(coordinate: CLLocationCoordinate2D(latitude: 	34.011_286, longitude: 	-116.166_868))
+						.frame(height: 315.0)
+						.ignoresSafeArea(edges: .top)
 				
-				CircleImage(image: Image("Bross"))
-					.offset(x: -80, y: 110)
-					.padding(.top, -100)
+					CircleImage(image: Image("Bross"))
+						.offset(x: -80, y: 160)
+						.padding(.top, -100)
 				
+				}
+			HStack {
 				Text("Mount Bross")
-					.offset(x: 90, y: 130)
 					.font(.title)
-				
+					.offset(x: 180)
+			
 				Text("Mosquito Range, Colorado")
-					.offset(x: 70, y: 155)
 					.font(.subheadline)
 					.foregroundColor(.secondary)
+					.offset(y: 25)
 			}
-			.padding(.bottom)
+			
 			Divider()
 			
 			
-			Spacer()
+			}
 		}
     }
 }
