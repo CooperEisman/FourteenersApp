@@ -11,6 +11,8 @@
 		DCD5A06525D8DCE9007D54ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A06425D8DCE9007D54ED /* ContentView.swift */; };
 		DCD5A06725D8DCE9007D54ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD5A06625D8DCE9007D54ED /* Assets.xcassets */; };
 		DCD5A06A25D8DCE9007D54ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD5A06925D8DCE9007D54ED /* Preview Assets.xcassets */; };
+		DCD5A07825D8F343007D54ED /* SingleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A07725D8F343007D54ED /* SingleView.swift */; };
+		DCD5A08225D8F7D9007D54ED /* BoxedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A08125D8F7D9007D54ED /* BoxedImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		DCD5A06625D8DCE9007D54ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD5A06925D8DCE9007D54ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCD5A06B25D8DCE9007D54ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD5A07725D8F343007D54ED /* SingleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleView.swift; sourceTree = "<group>"; };
+		DCD5A08125D8F7D9007D54ED /* BoxedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 			children = (
 				DCD5A06225D8DCE9007D54ED /* FourteenersApp.swift */,
 				DCD5A06425D8DCE9007D54ED /* ContentView.swift */,
+				DCD5A07725D8F343007D54ED /* SingleView.swift */,
+				DCD5A06825D8DCE9007D54ED /* Preview Content */,
 				DCD5A06625D8DCE9007D54ED /* Assets.xcassets */,
 				DCD5A06B25D8DCE9007D54ED /* Info.plist */,
-				DCD5A06825D8DCE9007D54ED /* Preview Content */,
+				DCD5A08125D8F7D9007D54ED /* BoxedImage.swift */,
 			);
 			path = Fourteeners;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCD5A08225D8F7D9007D54ED /* BoxedImage.swift in Sources */,
+				DCD5A07825D8F343007D54ED /* SingleView.swift in Sources */,
 				DCD5A06525D8DCE9007D54ED /* ContentView.swift in Sources */,
 				DCD5A06325D8DCE9007D54ED /* FourteenersApp.swift in Sources */,
 			);
