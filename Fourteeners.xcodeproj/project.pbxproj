@@ -11,7 +11,6 @@
 		DCD5A06525D8DCE9007D54ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A06425D8DCE9007D54ED /* ContentView.swift */; };
 		DCD5A06725D8DCE9007D54ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD5A06625D8DCE9007D54ED /* Assets.xcassets */; };
 		DCD5A06A25D8DCE9007D54ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD5A06925D8DCE9007D54ED /* Preview Assets.xcassets */; };
-		DCD5A07425D8EF15007D54ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCD5A07325D8EF15007D54ED /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +20,6 @@
 		DCD5A06625D8DCE9007D54ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD5A06925D8DCE9007D54ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCD5A06B25D8DCE9007D54ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD5A07325D8EF15007D54ED /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +59,6 @@
 				DCD5A06625D8DCE9007D54ED /* Assets.xcassets */,
 				DCD5A06B25D8DCE9007D54ED /* Info.plist */,
 				DCD5A06825D8DCE9007D54ED /* Preview Content */,
-				DCD5A07325D8EF15007D54ED /* LaunchScreen.storyboard */,
 			);
 			path = Fourteeners;
 			sourceTree = "<group>";
@@ -133,7 +130,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD5A07425D8EF15007D54ED /* LaunchScreen.storyboard in Resources */,
 				DCD5A06A25D8DCE9007D54ED /* Preview Assets.xcassets in Resources */,
 				DCD5A06725D8DCE9007D54ED /* Assets.xcassets in Resources */,
 			);
