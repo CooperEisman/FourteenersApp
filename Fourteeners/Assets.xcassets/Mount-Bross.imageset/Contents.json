@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "Mount-Bross.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Mount-Bross.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
