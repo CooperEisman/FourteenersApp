@@ -14,11 +14,12 @@
 		DC6C92B325D9DDEE00338349 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C92B225D9DDEE00338349 /* Mountain.swift */; };
 		DC6C92B625D9E27400338349 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C92B525D9E27400338349 /* ModelData.swift */; };
 		DC8AF50525DA42F100725752 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8AF50425DA42F100725752 /* DetailView.swift */; };
-		DC8AF50F25DAD53300725752 /* fourteenersData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC8AF50E25DAD53300725752 /* fourteenersData.json */; };
 		DC8AF51425DADBC200725752 /* DifficultySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8AF51325DADBC200725752 /* DifficultySetting.swift */; };
+		DC8AF52325DAEAC800725752 /* ListFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8AF52225DAEAC800725752 /* ListFilterView.swift */; };
+		DC8AF53525DB0A4800725752 /* FourteenersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8AF53425DB0A4800725752 /* FourteenersApp.swift */; };
+		DC8AF53825DB0A6200725752 /* fourteenersData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC8AF53725DB0A6200725752 /* fourteenersData.json */; };
 		DC997CEE25DA083300F94D0F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997CED25DA083300F94D0F /* ListView.swift */; };
 		DC997CF125DA097D00F94D0F /* ListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997CF025DA097D00F94D0F /* ListElement.swift */; };
-		DCD5A06325D8DCE9007D54ED /* FourteenersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A06225D8DCE9007D54ED /* FourteenersApp.swift */; };
 		DCD5A06525D8DCE9007D54ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A06425D8DCE9007D54ED /* ContentView.swift */; };
 		DCD5A06725D8DCE9007D54ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD5A06625D8DCE9007D54ED /* Assets.xcassets */; };
 		DCD5A06A25D8DCE9007D54ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD5A06925D8DCE9007D54ED /* Preview Assets.xcassets */; };
@@ -34,12 +35,13 @@
 		DC6C92B525D9E27400338349 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		DC8AF50125DA351D00725752 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC8AF50425DA42F100725752 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		DC8AF50E25DAD53300725752 /* fourteenersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourteenersData.json; sourceTree = "<group>"; };
 		DC8AF51325DADBC200725752 /* DifficultySetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySetting.swift; sourceTree = "<group>"; };
+		DC8AF52225DAEAC800725752 /* ListFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFilterView.swift; sourceTree = "<group>"; };
+		DC8AF53425DB0A4800725752 /* FourteenersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourteenersApp.swift; sourceTree = "<group>"; };
+		DC8AF53725DB0A6200725752 /* fourteenersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourteenersData.json; sourceTree = "<group>"; };
 		DC997CED25DA083300F94D0F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DC997CF025DA097D00F94D0F /* ListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElement.swift; sourceTree = "<group>"; };
 		DCD5A05F25D8DCE9007D54ED /* Fourteeners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourteeners.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCD5A06225D8DCE9007D54ED /* FourteenersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourteenersApp.swift; sourceTree = "<group>"; };
 		DCD5A06425D8DCE9007D54ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DCD5A06625D8DCE9007D54ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCD5A06925D8DCE9007D54ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -91,10 +93,9 @@
 		DC6C92AF25D9DCCF00338349 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DC8AF4F925DA2CA800725752 /* New Group */,
+				DC8AF51325DADBC200725752 /* DifficultySetting.swift */,
 				DC6C929B25D9C42800338349 /* MapBlock.swift */,
 				DC6C929425D9C33000338349 /* CircleBlock.swift */,
-				DC8AF51325DADBC200725752 /* DifficultySetting.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -111,16 +112,9 @@
 		DC6C92B125D9DD0400338349 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC8AF50E25DAD53300725752 /* fourteenersData.json */,
+				DC8AF53725DB0A6200725752 /* fourteenersData.json */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		DC8AF4F925DA2CA800725752 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DC8AF4FE25DA318900725752 /* DetailView */ = {
@@ -134,8 +128,9 @@
 		DC997CEC25DA081E00F94D0F /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				DC997CED25DA083300F94D0F /* ListView.swift */,
 				DC997CF025DA097D00F94D0F /* ListElement.swift */,
+				DC8AF52225DAEAC800725752 /* ListFilterView.swift */,
+				DC997CED25DA083300F94D0F /* ListView.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -143,6 +138,7 @@
 		DCD5A05625D8DCE8007D54ED = {
 			isa = PBXGroup;
 			children = (
+				DC8AF53425DB0A4800725752 /* FourteenersApp.swift */,
 				DC8AF50125DA351D00725752 /* README.md */,
 				DCD5A06125D8DCE9007D54ED /* Fourteeners */,
 				DCD5A06025D8DCE9007D54ED /* Products */,
@@ -162,7 +158,6 @@
 		DCD5A06125D8DCE9007D54ED /* Fourteeners */ = {
 			isa = PBXGroup;
 			children = (
-				DCD5A06225D8DCE9007D54ED /* FourteenersApp.swift */,
 				DC6C92B125D9DD0400338349 /* Resources */,
 				DC6C929725D9C36C00338349 /* Views */,
 				DC6C92B025D9DCEE00338349 /* Model */,
@@ -240,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC8AF50F25DAD53300725752 /* fourteenersData.json in Resources */,
+				DC8AF53825DB0A6200725752 /* fourteenersData.json in Resources */,
 				DCD5A06A25D8DCE9007D54ED /* Preview Assets.xcassets in Resources */,
 				DCD5A06725D8DCE9007D54ED /* Assets.xcassets in Resources */,
 			);
@@ -253,8 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8AF53525DB0A4800725752 /* FourteenersApp.swift in Sources */,
 				DC8AF51425DADBC200725752 /* DifficultySetting.swift in Sources */,
 				DC6C929C25D9C42800338349 /* MapBlock.swift in Sources */,
+				DC8AF52325DAEAC800725752 /* ListFilterView.swift in Sources */,
 				DC8AF50525DA42F100725752 /* DetailView.swift in Sources */,
 				DCD5A07825D8F343007D54ED /* SingleView.swift in Sources */,
 				DC997CEE25DA083300F94D0F /* ListView.swift in Sources */,
@@ -262,7 +259,6 @@
 				DC6C929525D9C33000338349 /* CircleBlock.swift in Sources */,
 				DCD5A06525D8DCE9007D54ED /* ContentView.swift in Sources */,
 				DC6C92B325D9DDEE00338349 /* Mountain.swift in Sources */,
-				DCD5A06325D8DCE9007D54ED /* FourteenersApp.swift in Sources */,
 				DC997CF125DA097D00F94D0F /* ListElement.swift in Sources */,
 				DC6C92A125D9D36200338349 /* BookmarkButton.swift in Sources */,
 				DC6C92A425D9D37200338349 /* ClimbedButton.swift in Sources */,

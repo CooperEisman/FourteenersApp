@@ -11,6 +11,8 @@ import SwiftUI
 struct ListElement: View {
 	var mountain: Mountain
 	
+	
+	
 	var body: some View {
 		HStack {
 			CircleImage(image: mountain.image, width:65)
