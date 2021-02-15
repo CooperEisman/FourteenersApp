@@ -10,6 +10,9 @@ Photo Credits:
 - Icon and Symbols: Cooper Eisman
 - Null Image: https://icon-library.com/icon/null-icon-10.html
 - Mountain Images:
+	- Alaska
+		- Denali: https://commons.wikimedia.org/wiki/File:Parque_nacional_y_reserva_Denali,_Alaska,_Estados_Unidos,_2017-08-30,_DD_72.jpg
+		- North Denali: https://commons.wikimedia.org/wiki/File:Eielson-_Denali,_fall_morning_(5728254288).jpg
 	- Colorado:
 		- Elbert: https://commons.wikimedia.org/wiki/File:Mount_Elbert_and_horses.jpg
 		- Massive: https://commons.wikimedia.org/wiki/File:Mount_Massive.jpg
@@ -24,6 +27,8 @@ Photo Credits:
 		- Rainier: https://commons.wikimedia.org/wiki/File:Mount_Rainier_and_lake_reflection.jpg
 		
 - Writing and Information for Prompts
+	- Alaska
+		-Denali: https://www.nps.gov/dena/planyourvisit/mountainfaqs.htm#route
 	- Colorado
 	- Washington
 		- Rainier: Wikipedia. 2021 “Article Title.” Last modified Date. URL.
