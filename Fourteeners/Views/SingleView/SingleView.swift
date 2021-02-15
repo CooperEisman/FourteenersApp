@@ -19,23 +19,21 @@ struct SingleView: View {
 	
 	//Start View
     var body: some View {
-		
-		
 		ScrollView {
-		VStack{
-			ZStack {
-				MapBlock(coordinate: CLLocationCoordinate2D(latitude: 	mountain.longitude, longitude: mountain.latitude))
-						.frame(height: 315.0)
-						.ignoresSafeArea(edges: .top)
-				
-				HStack {
-					CircleImage(image: mountain.image, width: 170)
-						.padding(.leading, 5.0)
+			VStack{
+				ZStack {
+					MapBlock(coordinate: CLLocationCoordinate2D(latitude: 	mountain.longitude, longitude: mountain.latitude))
+							.frame(height: 315.0)
+							.ignoresSafeArea(edges: .top)
 					
-					Spacer()
-				}.offset(y: 160).padding(.top, -100)
-				
-			}
+					HStack {
+						CircleImage(image: mountain.image, width: 150)
+							.padding(.leading, 5.0)
+						
+						Spacer()
+					}.offset(y: 160).padding(.top, -100)
+					
+				}
 			HStack {
 				Spacer()
 			VStack {
@@ -64,10 +62,10 @@ struct SingleView: View {
 				Text(String(mountain.elevationMeters) + " m")
 					.font(.headline)
 					.foregroundColor(.secondary)
-				Text(String(mountain.latitude) + "ºN")
+				Text(String(mountain.longitude) + "ºN")
 					.font(.headline)
 					.foregroundColor(.secondary)
-				Text(String(mountain.longitude) + "ºW")
+				Text(String(mountain.latitude) + "ºW")
 					.font(.headline)
 					.foregroundColor(.secondary)
 					

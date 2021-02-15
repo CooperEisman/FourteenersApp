@@ -85,6 +85,7 @@
 		DC6C92AF25D9DCCF00338349 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				DC8AF4F925DA2CA800725752 /* New Group */,
 				DC6C929B25D9C42800338349 /* MapBlock.swift */,
 				DC6C929425D9C33000338349 /* CircleBlock.swift */,
 			);
@@ -106,6 +107,13 @@
 				DC6C92C425D9F66400338349 /* fourteenersData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC8AF4F925DA2CA800725752 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		DC997CEC25DA081E00F94D0F /* ListView */ = {
@@ -378,6 +386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Fourteeners/Preview Content\"";
 				DEVELOPMENT_TEAM = 2R86FQBENT;
 				ENABLE_PREVIEWS = YES;
@@ -387,7 +396,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = CooperEisman.Fourteeners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -401,6 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Fourteeners/Preview Content\"";
 				DEVELOPMENT_TEAM = 2R86FQBENT;
 				ENABLE_PREVIEWS = YES;
@@ -410,7 +420,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = CooperEisman.Fourteeners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
