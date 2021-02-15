@@ -16,14 +16,14 @@ struct CircleImage: View {
 		image
 			.resizable()
 			.clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-			.overlay(Circle().stroke(Color.white, lineWidth: 4))
-			.shadow(radius: 7)
+			.overlay(Circle().stroke(Color.white, lineWidth: 3))
+			.shadow(radius: 5)
 			.frame(width: width, height: width)
 	}
 }
 
 struct CircleImage_Previews: PreviewProvider {
 	static var previews: some View {
-		CircleImage(image: Image("null"), width: 200)
+		CircleImage(image: Image("Plata"), width: 200)
 	}
 }

@@ -10,11 +10,12 @@ import SwiftUI
 
 struct ListView: View {
 	@EnvironmentObject var modelData: ModelData
-	@State private var showFavoritesOnly = false
+	@State private var showBookMarkedOnly = false
+	@State private var showClimbedOnly = false
 	
 	var filteredMountains: [Mountain] {
-		modelData.mountains.filter { landmark in
-				(!showFavoritesOnly)
+		modelData.mountains.filter { mountain in
+				(!showBookMarkedOnly)
 			}
 		}
 	
@@ -27,7 +28,7 @@ struct ListView: View {
 						}
 				}
 			}
-			.navigationTitle("Mountains")
+			.navigationTitle("14-Ers List")
 		}
     }
 }
