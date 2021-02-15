@@ -13,7 +13,7 @@ struct SingleView: View {
 	//get the variable
 	@EnvironmentObject var modelData: ModelData
 	var mountain: Mountain
-	var landmarkIndex: Int {
+	var mountainIndex: Int {
 			modelData.mountains.firstIndex(where: { $0.id == mountain.id })!
 		}
 	
@@ -38,9 +38,9 @@ struct SingleView: View {
 					Text(mountain.peak)
 					.font(.title3)
 				
-				BookmarkButton(isSet: .constant(true))
+				BookmarkButton(isSet: $modelData.mountains[mountainIndex].isBookmarked)
 					
-				ClimbedButton(isSet: .constant(true))
+				ClimbedButton(isSet: $modelData.mountains[mountainIndex].hasClimbed)
 				}
 			
 				Text(mountain.range + ", " + mountain.state)
@@ -86,6 +86,6 @@ struct SingleView: View {
 
 struct SingleView_Previews: PreviewProvider {
     static var previews: some View {
-        SingleView(mountain: ModelData().mountains[21])
+        SingleView(mountain: ModelData().mountains[22])
     }
 }
