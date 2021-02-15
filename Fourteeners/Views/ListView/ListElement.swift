@@ -13,9 +13,7 @@ struct ListElement: View {
 	
 	var body: some View {
 		HStack {
-			mountain.image
-				.resizable()
-				.frame(width: 50, height: 50)
+			CircleImage(image: mountain.image, width:65)
 			Text(mountain.peak)
 			
 			Spacer()
