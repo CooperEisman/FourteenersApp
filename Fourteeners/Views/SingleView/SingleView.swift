@@ -28,11 +28,16 @@ struct SingleView: View {
 						.frame(height: 315.0)
 						.ignoresSafeArea(edges: .top)
 				
-				CircleImage(image: mountain.image)
-						.offset(x: -90, y: 160)
-						.padding(.top, -100)
+				HStack {
+					CircleImage(image: mountain.image, width: 170)
+						.padding(.leading, 5.0)
+					
+					Spacer()
+				}.offset(y: 160).padding(.top, -100)
 				
-				}
+			}
+			HStack {
+				Spacer()
 			VStack {
 				HStack {
 					Text(mountain.peak)
@@ -46,7 +51,8 @@ struct SingleView: View {
 				Text(mountain.range + ", " + mountain.state)
 					.font(.subheadline)
 					.foregroundColor(.secondary)
-			} .offset(x: 90, y: 10) .padding(.bottom)
+			}
+			}.padding([.top, .trailing], 15.0)
 			
 			Divider()
 			
