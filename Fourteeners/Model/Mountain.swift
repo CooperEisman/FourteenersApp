@@ -23,7 +23,12 @@ struct Mountain: Hashable, Codable, Identifiable {
 	var isBookmarked: Bool
 	var hasClimbed: Bool
 	var imageName: String
-	var Description: String
+	var difficulty: Int
+	
+	
+	var about: String
+	var history: String
+	var trail: String
 	
 	var image: Image {
 		Image(imageName)

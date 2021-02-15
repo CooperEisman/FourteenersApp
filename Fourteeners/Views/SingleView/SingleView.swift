@@ -73,14 +73,25 @@ struct SingleView: View {
 			
 			Divider()
 			
-				VStack(alignment: .leading) {
-					Text("About " + mountain.peak)
-						.font(.title3)
-				
-					Text(mountain.Description)
+				VStack(alignment: .leading) {DisclosureGroup("About " + mountain.peak) {
+					Text(mountain.about)
 						.foregroundColor(.secondary)
+				}.font(.title3).animation(.easeInOut)
+				
+				DisclosureGroup("History of " + mountain.peak) {
+					Text(mountain.history)
+						.foregroundColor(.secondary)
+				}.font(.title3).animation(.easeInOut)
+				
+				DisclosureGroup("Trail Info") {
+					Text(mountain.trail)
+						.foregroundColor(.secondary)
+				}.font(.title3).animation(.easeInOut)
+					
+				
+					
 						
-				}.padding(.all)
+				}.padding(.all).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
 			
 			
 			}
