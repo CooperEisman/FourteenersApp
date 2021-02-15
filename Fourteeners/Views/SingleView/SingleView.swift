@@ -29,7 +29,7 @@ struct SingleView: View {
 						.ignoresSafeArea(edges: .top)
 				
 				CircleImage(image: mountain.image)
-						.offset(x: -80, y: 160)
+						.offset(x: -90, y: 160)
 						.padding(.top, -100)
 				
 				}
@@ -81,6 +81,8 @@ struct SingleView: View {
 			
 			}
 		}
+		.navigationTitle(mountain.peak)
+		.navigationBarTitleDisplayMode(.inline)
     }
 }
 
