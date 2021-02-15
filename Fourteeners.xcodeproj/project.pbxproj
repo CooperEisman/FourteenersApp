@@ -15,6 +15,7 @@
 		DC6C92B625D9E27400338349 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C92B525D9E27400338349 /* ModelData.swift */; };
 		DC8AF50525DA42F100725752 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8AF50425DA42F100725752 /* DetailView.swift */; };
 		DC8AF50F25DAD53300725752 /* fourteenersData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC8AF50E25DAD53300725752 /* fourteenersData.json */; };
+		DC8AF51425DADBC200725752 /* DifficultySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8AF51325DADBC200725752 /* DifficultySetting.swift */; };
 		DC997CEE25DA083300F94D0F /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997CED25DA083300F94D0F /* ListView.swift */; };
 		DC997CF125DA097D00F94D0F /* ListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC997CF025DA097D00F94D0F /* ListElement.swift */; };
 		DCD5A06325D8DCE9007D54ED /* FourteenersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A06225D8DCE9007D54ED /* FourteenersApp.swift */; };
@@ -34,6 +35,7 @@
 		DC8AF50125DA351D00725752 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DC8AF50425DA42F100725752 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		DC8AF50E25DAD53300725752 /* fourteenersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourteenersData.json; sourceTree = "<group>"; };
+		DC8AF51325DADBC200725752 /* DifficultySetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultySetting.swift; sourceTree = "<group>"; };
 		DC997CED25DA083300F94D0F /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DC997CF025DA097D00F94D0F /* ListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElement.swift; sourceTree = "<group>"; };
 		DCD5A05F25D8DCE9007D54ED /* Fourteeners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourteeners.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 				DC8AF4F925DA2CA800725752 /* New Group */,
 				DC6C929B25D9C42800338349 /* MapBlock.swift */,
 				DC6C929425D9C33000338349 /* CircleBlock.swift */,
+				DC8AF51325DADBC200725752 /* DifficultySetting.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8AF51425DADBC200725752 /* DifficultySetting.swift in Sources */,
 				DC6C929C25D9C42800338349 /* MapBlock.swift in Sources */,
 				DC8AF50525DA42F100725752 /* DetailView.swift in Sources */,
 				DCD5A07825D8F343007D54ED /* SingleView.swift in Sources */,

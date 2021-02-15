@@ -72,6 +72,9 @@ struct SingleView: View {
 			}
 			
 			Divider()
+				
+				DifficultySetting(difficulty: mountain.difficulty)
+			Divider()
 			
 				VStack(alignment: .leading) {DisclosureGroup("About " + mountain.peak) {
 					Text(mountain.about)
