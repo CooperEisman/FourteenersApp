@@ -22,3 +22,9 @@ Photo Credits:
 		- Castle: https://commons.wikimedia.org/wiki/File:Castle_Peak_CO_Full.JPG
 	-Washington:
 		- Rainier: https://commons.wikimedia.org/wiki/File:Mount_Rainier_and_lake_reflection.jpg
+		
+- Writing and Information for Prompts
+	- Colorado
+	- Washington
+		- Rainier: Wikipedia. 2021 “Article Title.” Last modified Date. URL.
+	- Basic: Wikipedia. Year. “Article Title.” Last modified Date. URL.
