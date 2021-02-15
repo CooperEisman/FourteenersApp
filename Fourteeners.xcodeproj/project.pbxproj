@@ -56,8 +56,8 @@
 		DC6C929725D9C36C00338349 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DC997CEC25DA081E00F94D0F /* ListView */,
 				DCD5A06425D8DCE9007D54ED /* ContentView.swift */,
+				DC997CEC25DA081E00F94D0F /* ListView */,
 				DC6C929825D9C37300338349 /* SingleView */,
 			);
 			path = Views;
@@ -387,7 +387,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = CooperEisman.Fourteeners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -410,7 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = CooperEisman.Fourteeners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

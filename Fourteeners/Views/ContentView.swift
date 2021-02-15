@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+	@StateObject private var modelData = ModelData()
+	
     var body: some View {
-		SingleView(mountain: ModelData().mountains[22])
+		ListView()
+			.environmentObject(ModelData())
     }
 }
 
