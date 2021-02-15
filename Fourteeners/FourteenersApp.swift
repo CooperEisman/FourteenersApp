@@ -11,7 +11,7 @@ import SwiftUI
 struct FourteenersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(mountain: ModelData().mountains[0])
         }
     }
 }

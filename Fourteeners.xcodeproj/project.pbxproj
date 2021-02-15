@@ -13,7 +13,7 @@
 		DC6C92A425D9D37200338349 /* ClimbedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C92A325D9D37200338349 /* ClimbedButton.swift */; };
 		DC6C92B325D9DDEE00338349 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C92B225D9DDEE00338349 /* Mountain.swift */; };
 		DC6C92B625D9E27400338349 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C92B525D9E27400338349 /* ModelData.swift */; };
-		DC6C92B925D9E84300338349 /* fourteenersData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC6C92B825D9E84300338349 /* fourteenersData.json */; };
+		DC6C92C525D9F66400338349 /* fourteenersData.json in Resources */ = {isa = PBXBuildFile; fileRef = DC6C92C425D9F66400338349 /* fourteenersData.json */; };
 		DCD5A06325D8DCE9007D54ED /* FourteenersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A06225D8DCE9007D54ED /* FourteenersApp.swift */; };
 		DCD5A06525D8DCE9007D54ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD5A06425D8DCE9007D54ED /* ContentView.swift */; };
 		DCD5A06725D8DCE9007D54ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCD5A06625D8DCE9007D54ED /* Assets.xcassets */; };
@@ -28,7 +28,7 @@
 		DC6C92A325D9D37200338349 /* ClimbedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbedButton.swift; sourceTree = "<group>"; };
 		DC6C92B225D9DDEE00338349 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		DC6C92B525D9E27400338349 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		DC6C92B825D9E84300338349 /* fourteenersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourteenersData.json; sourceTree = "<group>"; };
+		DC6C92C425D9F66400338349 /* fourteenersData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = fourteenersData.json; sourceTree = "<group>"; };
 		DCD5A05F25D8DCE9007D54ED /* Fourteeners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fourteeners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD5A06225D8DCE9007D54ED /* FourteenersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourteenersApp.swift; sourceTree = "<group>"; };
 		DCD5A06425D8DCE9007D54ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		DC6C92B125D9DD0400338349 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC6C92B825D9E84300338349 /* fourteenersData.json */,
+				DC6C92C425D9F66400338349 /* fourteenersData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6C92B925D9E84300338349 /* fourteenersData.json in Resources */,
+				DC6C92C525D9F66400338349 /* fourteenersData.json in Resources */,
 				DCD5A06A25D8DCE9007D54ED /* Preview Assets.xcassets in Resources */,
 				DCD5A06725D8DCE9007D54ED /* Assets.xcassets in Resources */,
 			);

@@ -14,7 +14,7 @@ struct Mountain: Hashable, Codable, Identifiable {
 	var id: Int
 	var peak: String
 	var elevationFeet: Int
-	var elevationMeters: Int
+	var elevationMeters: Double
 	var range: String
 	var state: String
 	var latitude: Double
@@ -27,19 +27,6 @@ struct Mountain: Hashable, Codable, Identifiable {
 	
 	var image: Image {
 		Image(imageName)
-	}
-	
-	private var coordinates: Coordinates
-	var locationCoordinate: CLLocationCoordinate2D {
-		CLLocationCoordinate2D(
-			latitude: latitude,
-			longitude: longitude
-		)
-	}
-	
-	struct Coordinates: Hashable, Codable {
-		var latitude: Double
-		var longitude: Double
 	}
 	
 }
