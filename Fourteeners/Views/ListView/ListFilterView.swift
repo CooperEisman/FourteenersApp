@@ -14,6 +14,9 @@ struct ListFilterView: View {
 	@Binding var filterBookmarked: Bool
 	@Binding var whatState: String
 	
+	@Binding var doSort: Bool
+	@Binding var sortBy: String
+	
     var body: some View {
 		ScrollView {
 			Toggle(isOn: $filterBookmarked) {
@@ -37,6 +40,18 @@ struct ListFilterView: View {
 				}
 			}
 			
+			Toggle(isOn: $doSort) {
+				Text("Sort Mountains: ")
+			}.padding()
+			
+			if doSort {
+				Picker(selection: $sortBy, label: Text("Sort By: ")) {
+					Text("Alphabetical").tag("Alpha")
+					Text("Alphabetical Reversed").tag("AlphaRev")
+					Text("Highest Altitude").tag("Peak")
+					Text("Lowest Altitude").tag("PeakRev")
+				}
+			}
 			
 		}
 		.navigationTitle("Filter Settings")
@@ -46,6 +61,6 @@ struct ListFilterView: View {
 
 struct ListFilterView_Previews: PreviewProvider {
     static var previews: some View {
-		ListFilterView(doFilterStates: .constant(true), filterClimbed: .constant(true), filterBookmarked: .constant(true), whatState: .constant("Colorado"))
+		ListFilterView(doFilterStates: .constant(true), filterClimbed: .constant(true), filterBookmarked: .constant(true), whatState: .constant("Colorado"), doSort: .constant(true), sortBy: .constant("Alpha"))
     }
 }

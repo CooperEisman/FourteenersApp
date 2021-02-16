@@ -14,6 +14,8 @@ struct ListView: View {
 	@State private var showClimbedOnly = false
 	@State var doFilterState = false
 	@State var filterState = "Colorado"
+	@State var doSort = false
+	@State var sortBy = "Alpha"
 		
 	var filteredMountainsOne: [Mountain] {
 		modelData.mountains.filter { mountain in
@@ -31,13 +33,25 @@ struct ListView: View {
 			}
 		}
 	
-	var filteredMountains: [Mountain] { filteredMountainsThree.sorted(by: { $1.peak > $0.peak })
+	var filteredMountains: [Mountain] {
+		if(doSort) { if(sortBy == "Alpha") { return filteredMountainsThree.sorted(by: { $1.peak > $0.peak })
+			
+		} else if (sortBy == "AlphaRev") {
+			return filteredMountainsThree.sorted(by: { $0.peak > $1.peak })
+		
+		} else if (sortBy == "Peak") {
+			return filteredMountainsThree.sorted(by: { $0.elevationFeet > $1.elevationFeet })
+		} else if (sortBy == "PeakRev") {
+			return filteredMountainsThree.sorted(by: { $1.elevationFeet > $0.elevationFeet })
+		}
+	}
+	return filteredMountainsThree
 	}
 	
 	var body: some View {
 		NavigationView {
 			List {
-				NavigationLink("Filter Settings", destination: ListFilterView(doFilterStates: $doFilterState, filterClimbed: $showClimbedOnly, filterBookmarked: $showBookMarkedOnly, whatState: $filterState)).font(.title3)
+				NavigationLink("Filter Settings", destination: ListFilterView(doFilterStates: $doFilterState, filterClimbed: $showClimbedOnly, filterBookmarked: $showBookMarkedOnly, whatState: $filterState, doSort: $doSort, sortBy: $sortBy)).font(.title3)
 				
 				ForEach(filteredMountains) { mountain in
 					NavigationLink(destination: SingleView(mountain: mountain)) {

@@ -11,21 +11,11 @@ import SwiftUI
 struct DetailView: View {
 	@EnvironmentObject var modelData: ModelData
 	
-	var featuredMountains: [Mountain] {
-		modelData.mountains.filter { mountain in
-			(mountain.isFeatured)
-			}
-		}
-	
     var body: some View {
 		VStack {
-			HStack {
-				Image(featuredMountains[0].imageName)
-				Image(featuredMountains[0].imageName)
-			}
-			
+			Text("Hello")
 		}
-}
+	}
 }
 
 struct DetailView_Previews: PreviewProvider {
