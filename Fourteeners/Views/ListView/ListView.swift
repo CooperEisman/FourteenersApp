@@ -44,11 +44,9 @@ struct ListView: View {
 							ListElement(mountain: mountain)
 						}
 				}
-			}
-			.navigationTitle("All Mountains")
-			.navigationBarTitleDisplayMode(.inline)
-			
-		}
+			} .navigationTitle("All Mountains")
+			  .navigationBarTitleDisplayMode(.inline)
+		}.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
