@@ -31,20 +31,23 @@ struct ListView: View {
 			}
 		}
 	
-	var filteredMountains: [Mountain] { filteredMountainsThree.sorted(by: { $0.peak > $1.peak })
+	var filteredMountains: [Mountain] { filteredMountainsThree.sorted(by: { $1.peak > $0.peak })
 	}
 	
 	var body: some View {
 		NavigationView {
 			List {
 				NavigationLink("Filter Settings", destination: ListFilterView(doFilterStates: $doFilterState, filterClimbed: $showClimbedOnly, filterBookmarked: $showBookMarkedOnly, whatState: $filterState)).font(.title3)
+				
 				ForEach(filteredMountains) { mountain in
 					NavigationLink(destination: SingleView(mountain: mountain)) {
 							ListElement(mountain: mountain)
 						}
 				}
 			}
-			.navigationTitle("14-Ers List")
+			.navigationTitle("All Mountains")
+			.navigationBarTitleDisplayMode(.inline)
+			
 		}
     }
 }

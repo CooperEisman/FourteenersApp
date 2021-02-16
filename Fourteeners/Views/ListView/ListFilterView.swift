@@ -22,11 +22,12 @@ struct ListFilterView: View {
 			
 			Toggle(isOn: $filterClimbed) {
 				Text("Filter by Climbed")
-			}
-			.padding()
+			}.padding()
+			
 			Toggle(isOn: $doFilterStates) {
 				Text("Filter by State")
 			}.padding()
+			
 			if doFilterStates {
 				Picker(selection: $whatState, label: Text("State: ")) {
 					Text("Colorado").tag("Colorado")
