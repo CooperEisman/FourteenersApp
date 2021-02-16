@@ -25,12 +25,14 @@ struct ListView: View {
 			(!showBookMarkedOnly || mountain.isBookmarked)
 			}
 		}
-	var filteredMountains: [Mountain] {
+	var filteredMountainsThree: [Mountain] {
 		filteredMountainsTwo.filter { mountain in
 			(!doFilterState || mountain.state == filterState)
 			}
 		}
 	
+	var filteredMountains: [Mountain] { filteredMountainsThree.sorted(by: { $0.peak > $1.peak })
+	}
 	
 	var body: some View {
 		NavigationView {

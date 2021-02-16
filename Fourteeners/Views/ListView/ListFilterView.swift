@@ -31,6 +31,8 @@ struct ListFilterView: View {
 				Picker(selection: $whatState, label: Text("State: ")) {
 					Text("Colorado").tag("Colorado")
 					Text("Washington").tag("Washington")
+					Text("Alaska").tag("Alaska")
+					Text("California").tag("California")
 				}
 			}
 			
