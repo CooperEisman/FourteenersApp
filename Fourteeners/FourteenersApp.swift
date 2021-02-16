@@ -12,7 +12,6 @@ struct FourteenersApp: App {
 	
 	
 	var body: some Scene {
-		
 		WindowGroup {
 			ContentView()
 				.environmentObject(modelData)

@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-final class ModelData: ObservableObject {
+class ModelData: ObservableObject {
 	@Published var mountains: [Mountain] = load("fourteenersData.json")
 }
 
