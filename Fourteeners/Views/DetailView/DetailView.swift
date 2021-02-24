@@ -10,11 +10,9 @@ import SwiftUI
 
 struct DetailView: View {
 	@EnvironmentObject var modelData: ModelData
-	
+
     var body: some View {
-		VStack {
-			Text("Hello")
-		}
+		Text("My Ass")
 	}
 }
 

@@ -106,7 +106,7 @@ struct SingleView: View {
 
 struct SingleView_Previews: PreviewProvider {
     static var previews: some View {
-        SingleView(mountain: ModelData().mountains[1])
+        SingleView(mountain: ModelData().mountains[54])
 			.environmentObject(ModelData())
     }
 }
