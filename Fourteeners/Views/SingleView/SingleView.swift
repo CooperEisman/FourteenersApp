@@ -27,7 +27,7 @@ struct SingleView: View {
 							.ignoresSafeArea(edges: .top)
 					
 					HStack {
-						CircleImage(image: mountain.image, width: 150)
+						CircleImage(image: Image(mountain.imageName ?? "none"), width: 150)
 							.padding(.leading, 5.0)
 						
 						Spacer()
@@ -38,15 +38,15 @@ struct SingleView: View {
 				Spacer()
 			VStack {
 				HStack {
-					Text(mountain.peak)
+					Text(mountain.name ?? "Empty")
 					.font(.title3)
 				
 				BookmarkButton(isSet: $modelData.mountains[mountainIndex].isBookmarked)
 					
-				ClimbedButton(isSet: $modelData.mountains[mountainIndex].hasClimbed)
+				ClimbedButton(isSet: $modelData.mountains[mountainIndex].isClimbed)
 				}
 			
-				Text(mountain.range + ", " + mountain.state)
+				Text((mountain.rangeName ?? "Empty") + ", " + (mountain.stateName ?? "Empty"))
 					.font(.subheadline)
 					.foregroundColor(.secondary)
 			}
@@ -73,21 +73,21 @@ struct SingleView: View {
 			
 			Divider()
 				
-				DifficultySetting(difficulty: mountain.difficulty)
+				DifficultySetting(difficulty: (Int)(mountain.difficulty))
 			Divider()
 			
-				VStack(alignment: .leading) {DisclosureGroup("About " + mountain.peak) {
-					Text(mountain.about)
+				VStack(alignment: .leading) {DisclosureGroup("About " + (mountain.name ?? "Error")) {
+					Text(mountain.aboutText ?? "Error")
 						.foregroundColor(.secondary)
 				}.font(.title3).animation(.easeInOut)
 				
-				DisclosureGroup("History of " + mountain.peak) {
-					Text(mountain.history)
+				DisclosureGroup("History of " + (mountain.name ?? "Error")) {
+					Text(mountain.historyText ?? "Error")
 						.foregroundColor(.secondary)
 				}.font(.title3).animation(.easeInOut)
 				
 				DisclosureGroup("Trail Info") {
-					Text(mountain.trail)
+					Text(mountain.trailText ?? "Error")
 						.foregroundColor(.secondary)
 				}.font(.title3).animation(.easeInOut)
 					
@@ -99,7 +99,7 @@ struct SingleView: View {
 			
 			}
 		}
-		.navigationTitle(mountain.peak)
+		.navigationTitle(mountain.name ?? "Error")
 		.navigationBarTitleDisplayMode(.inline)
     }
 }

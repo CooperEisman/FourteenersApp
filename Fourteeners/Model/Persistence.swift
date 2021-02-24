@@ -13,10 +13,14 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+		
         for _ in 0..<10 {
             let newItem = Mountain(context: viewContext)
+			
+			
             
-            //Implement Here
+			
+            
         }
         do {
             try viewContext.save()
@@ -32,7 +36,7 @@ struct PersistenceController {
     let container: NSPersistentCloudKitContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentCloudKitContainer(name: "PeaksIOS")
+        container = NSPersistentCloudKitContainer(name: "Fourteeners")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
@@ -53,4 +57,5 @@ struct PersistenceController {
             }
         })
     }
+
 }

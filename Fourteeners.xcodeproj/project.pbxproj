@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E8066D525E6E53200CDA7FD /* Mountain.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1E8066D325E6E53200CDA7FD /* Mountain.xcdatamodeld */; };
 		1E8066D825E6E56000CDA7FD /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8066D725E6E56000CDA7FD /* Persistence.swift */; };
+		1E8066E125E6EBB500CDA7FD /* MountainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8066E025E6EBB500CDA7FD /* MountainData.swift */; };
 		1EC2ED7125E34E130012BE71 /* FeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC2ED7025E34E130012BE71 /* FeatureView.swift */; };
 		DC6C929525D9C33000338349 /* CircleBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C929425D9C33000338349 /* CircleBlock.swift */; };
 		DC6C929C25D9C42800338349 /* MapBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6C929B25D9C42800338349 /* MapBlock.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		1E8066D425E6E53200CDA7FD /* PeaksIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PeaksIOS.xcdatamodel; sourceTree = "<group>"; };
 		1E8066D725E6E56000CDA7FD /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		1E8066E025E6EBB500CDA7FD /* MountainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainData.swift; sourceTree = "<group>"; };
 		1EC2ED7025E34E130012BE71 /* FeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureView.swift; sourceTree = "<group>"; };
 		DC6C929425D9C33000338349 /* CircleBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBlock.swift; sourceTree = "<group>"; };
 		DC6C929B25D9C42800338349 /* MapBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBlock.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				1E8066D725E6E56000CDA7FD /* Persistence.swift */,
 				1E8066D325E6E53200CDA7FD /* Mountain.xcdatamodeld */,
 				DC6C92B525D9E27400338349 /* ModelData.swift */,
+				1E8066E025E6EBB500CDA7FD /* MountainData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				DC997CEE25DA083300F94D0F /* ListView.swift in Sources */,
 				DC6C92B625D9E27400338349 /* ModelData.swift in Sources */,
 				DC6C929525D9C33000338349 /* CircleBlock.swift in Sources */,
+				1E8066E125E6EBB500CDA7FD /* MountainData.swift in Sources */,
 				DCD5A06525D8DCE9007D54ED /* ContentView.swift in Sources */,
 				1E8066D525E6E53200CDA7FD /* Mountain.xcdatamodeld in Sources */,
 				DC997CF125DA097D00F94D0F /* ListElement.swift in Sources */,
