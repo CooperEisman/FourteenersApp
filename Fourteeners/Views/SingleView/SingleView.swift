@@ -11,10 +11,9 @@ import MapKit
 
 struct SingleView: View {
 	//get the variable
-	@EnvironmentObject var modelData: ModelData
 	var mountain: Mountain
-	var mountainIndex: Int {
-			modelData.mountains.firstIndex(where: { $0.id == mountain.id })!
+	var mountainIndex: UUID {
+		mountain.id ?? UUID()
 		}
 	
 	//Start View
@@ -41,9 +40,9 @@ struct SingleView: View {
 					Text(mountain.name ?? "Empty")
 					.font(.title3)
 				
-				BookmarkButton(isSet: $modelData.mountains[mountainIndex].isBookmarked)
+					BookmarkButton(isSet: mountain.isFavorited)
 					
-				ClimbedButton(isSet: $modelData.mountains[mountainIndex].isClimbed)
+					ClimbedButton(isSet: mountain.isClimbed)
 				}
 			
 				Text((mountain.rangeName ?? "Empty") + ", " + (mountain.stateName ?? "Empty"))

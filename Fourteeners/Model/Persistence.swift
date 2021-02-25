@@ -14,13 +14,33 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
 		
-        for _ in 0..<10 {
-            let newItem = Mountain(context: viewContext)
+		var modelData: [MountainData] {return load("FourteenersData.json")}
+		
+		
+		var curr = 0
+		
+		for _ in 0..<modelData.count {
+			var newItem = Mountain(context: viewContext)
 			
+			newItem.name = modelData[curr].peak
+			newItem.aboutText = modelData[curr].about
+			newItem.difficulty = (Int16)(modelData[curr].difficulty)
+			newItem.elevationFeet = (Int16)(modelData[curr].elevationFeet)
+			newItem.elevationMeters = (Int16)(modelData[curr].elevationMeters)
+			newItem.historyText = modelData[curr].history
+			newItem.imageName = modelData[curr].imageName
+			newItem.isClimbed = modelData[curr].hasClimbed
+			newItem.isFavorited = modelData[curr].isBookmarked
+			newItem.isFeatured = false
+			newItem.latitude = modelData[curr].latitude
+			newItem.longitude = modelData[curr].longitude
+			newItem.rangeName = modelData[curr].range
+			newItem.stateName = modelData[curr].state
+			newItem.trailText = modelData[curr].trail
 			
+			newItem.id = UUID()
             
-			
-            
+			curr += 1
         }
         do {
             try viewContext.save()

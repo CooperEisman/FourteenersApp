@@ -15,8 +15,8 @@ struct ListElement: View {
 	
 	var body: some View {
 		HStack {
-			CircleImage(image: mountain.image, width:65)
-			Text(mountain.peak)
+			CircleImage(image: Image(mountain.imageName ?? "none"), width:65)
+			Text(mountain.name ?? "Empty")
 			
 			Spacer()
 			
