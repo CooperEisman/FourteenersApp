@@ -9,18 +9,19 @@
 import SwiftUI
 
 struct ListElement: View {
-	var mountain: Mountain
+	var mountain: MountainData
+	@Environment(\.managedObjectContext) private var context
 	
 	
 	
 	var body: some View {
 		HStack {
 			CircleImage(image: Image(mountain.imageName ?? "none"), width:65)
-			Text(mountain.name ?? "Empty")
+			Text(mountain.peak)
 			
 			Spacer()
 			
-			if mountain.isFavorited {
+			if mountain.ModelData {
 				Image(systemName: "bookmark.fill")
 					.foregroundColor(.accentColor)
 			}
