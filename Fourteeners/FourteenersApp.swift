@@ -8,7 +8,6 @@ import SwiftUI
 
 @main
 struct FourteenersApp: App {
-	
 	let persistenceController = PersistenceController.shared
 	
 	

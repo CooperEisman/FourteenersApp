@@ -40,7 +40,7 @@ struct SingleView: View {
 					Text(mountain.name ?? "Empty")
 					.font(.title3)
 				
-					BookmarkButton(isSet: mountain.isFavorited)
+					BookmarkButton(isSet: (mountain.isFavorited)
 					
 					ClimbedButton(isSet: mountain.isClimbed)
 				}

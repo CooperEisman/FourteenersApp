@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20B29" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Mountain" representedClassName="Mountain" syncable="YES" codeGenerationType="class">
-        <attribute name="aboutText" optional="YES" attributeType="String"/>
-        <attribute name="difficulty" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="elevationFeet" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="elevationMeters" optional="YES" attributeType="Integer 16" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="historyText" optional="YES" attributeType="String"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="imageName" optional="YES" attributeType="String"/>
         <attribute name="isClimbed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="isFavorited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="isFeatured" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="rangeName" optional="YES" attributeType="String"/>
-        <attribute name="stateName" optional="YES" attributeType="String"/>
-        <attribute name="trailText" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Mountain" positionX="-63" positionY="-18" width="128" height="269"/>
+        <element name="Mountain" positionX="-63" positionY="-18" width="128" height="89"/>
     </elements>
 </model>

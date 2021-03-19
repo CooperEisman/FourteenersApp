@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ListView: View {
+	@Environment(\.managedObjectContext) private var viewContext
 	@EnvironmentObject var modelData: ModelData
 	@State private var showBookMarkedOnly = false
 	@State private var showClimbedOnly = false
@@ -24,17 +25,17 @@ struct ListView: View {
 		}
 	var filteredMountainsTwo: [Mountain] {
 		filteredMountainsOne.filter { mountain in
-			(!showBookMarkedOnly || mountain.isBookmarked)
+			(!showBookMarkedOnly || mountain.isFavorited)
 			}
 		}
 	var filteredMountainsThree: [Mountain] {
 		filteredMountainsTwo.filter { mountain in
-			(!doFilterState || mountain.state == filterState)
+			(!doFilterState || mountain.stateName == filterState)
 			}
 		}
 	
 	var filteredMountains: [Mountain] {
-		if(doSort) { if(sortBy == "Alpha") { return filteredMountainsThree.sorted(by: { $1.peak > $0.peak })
+		if(doSort) { if(sortBy == "Alpha") { return filteredMountainsThree.sorted(by: { $1.name > $0.name })
 			
 		} else if (sortBy == "AlphaRev") {
 			return filteredMountainsThree.sorted(by: { $0.peak > $1.peak })
