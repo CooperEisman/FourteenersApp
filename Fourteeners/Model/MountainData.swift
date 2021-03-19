@@ -28,9 +28,6 @@ struct MountainData: Hashable, Codable, Identifiable {
 	var state: String
 	var latitude: Double
 	var longitude: Double
-	var isFeatured: Bool
-	var isBookmarked: Bool
-	var hasClimbed: Bool
 	var imageName: String
 	var difficulty: Int
 	
