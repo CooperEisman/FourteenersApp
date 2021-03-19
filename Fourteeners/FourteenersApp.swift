@@ -8,6 +8,7 @@ import SwiftUI
 
 @main
 struct FourteenersApp: App {
+	@StateObject private var modelData = ModelData()
 	let persistenceController = PersistenceController.shared
 	
 	
@@ -15,6 +16,7 @@ struct FourteenersApp: App {
 		WindowGroup {
 			ContentView()
 				.environment(\.managedObjectContext, persistenceController.container.viewContext)
+				.environmentObject(modelData)
 			
 		}
 		
