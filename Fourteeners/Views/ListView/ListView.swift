@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct ListView: View {
+	//Add Stuff
 	@Environment(\.managedObjectContext) private var context
 	@EnvironmentObject var modelData: ModelData
+	
+	//Fetch Saved Data
+	@FetchRequest(
+		sortDescriptors: [NSSortDescriptor(keyPath: \MountainDB.id, ascending: true)],
+		animation: .default)
+	private var mountainDB: FetchedResults<MountainDB>
+	
+	
+	
+	
 	
 	
 	
@@ -18,11 +29,11 @@ struct ListView: View {
 	var body: some View {
 		NavigationView {
 			List {
-				ForEach(modelData.mountains) { _ in MountainData
-					NavigationLink(destination: SingleView(mountain: MountainData)) {
-							ListElement(mountain: MountainData).environment(\.managedObjectContext, self.context)
-						}
-				}
+				ForEach(modelData.mountains) { mountain in
+									NavigationLink(destination: SingleView(mountain: mountain)) {
+											ListElement(mountain: mountain)
+										}
+								}
 			} .navigationTitle("All Mountains")
 			  .navigationBarTitleDisplayMode(.inline)
 		}.navigationViewStyle(StackNavigationViewStyle())
