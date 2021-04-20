@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ListElement: View {
 	var mountain: Mountain
-	
-	
+	@Environment(\.managedObjectContext) private var context
 	
 	var body: some View {
 		HStack {
@@ -18,7 +17,7 @@ struct ListElement: View {
 			Text(mountain.peak)
 			
 			Spacer()
-			
+						
 			if mountain.isBookmarked {
 				Image(systemName: "bookmark.fill")
 					.foregroundColor(.accentColor)

@@ -17,21 +17,32 @@ struct ListView: View {
 	@FetchRequest(
 		sortDescriptors: [NSSortDescriptor(keyPath: \MountainDB.id, ascending: true)],
 		animation: .default)
-	private var mountainDB: FetchedResults<MountainDB>
+	private var mountainDBs: FetchedResults<MountainDB>
 	
-	
-	
-	
-	
-	
+	var mountains: [Mountain] {
+		for mountain in mountainDBs {
+			modelData.mountains[Int(mountain.id)].isBookmarked = mountain.isFavorited
+			modelData.mountains[Int(mountain.id)].hasClimbed = mountain.isClimbed
+		}
+		
+		do {
+			try context.save()
+		} catch {
+			// Replace this implementation with code to handle the error appropriately.
+			// fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+			let nsError = error as NSError
+			fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+		}
+		return modelData.mountains
+	}
 	
 	
 	var body: some View {
 		NavigationView {
 			List {
-				ForEach(modelData.mountains) { mountain in
+				ForEach(mountains) { mountain in
 									NavigationLink(destination: SingleView(mountain: mountain)) {
-											ListElement(mountain: mountain)
+											ListElement(mountain: mountain).environment(\.managedObjectContext, self.context)
 										}
 								}
 			} .navigationTitle("All Mountains")
@@ -43,6 +54,6 @@ struct ListView: View {
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
-			.environmentObject(ModelData())
+			.environmentObject(ModelData()).environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
