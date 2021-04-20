@@ -5,12 +5,11 @@
 //  Created by devbuild on 2/14/21.
 //  Copyright © 2021 Cooper Eisman. All rights reserved.
 //
-
 import Foundation
 import Combine
 
 class ModelData: ObservableObject {
-	@Published var mountains: [MountainData] = load("fourteenersData.json")
+	@Published var mountains: [Mountain] = load("fourteenersData.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

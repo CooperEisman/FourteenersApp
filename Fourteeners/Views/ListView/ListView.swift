@@ -14,10 +14,10 @@ struct ListView: View {
 	
 	
 	
+	
 	var body: some View {
 		NavigationView {
 			List {
-
 				ForEach(modelData.mountains) { _ in MountainData
 					NavigationLink(destination: SingleView(mountain: MountainData)) {
 							ListElement(mountain: MountainData).environment(\.managedObjectContext, self.context)

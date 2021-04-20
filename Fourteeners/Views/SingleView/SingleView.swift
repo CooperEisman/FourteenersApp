@@ -10,8 +10,11 @@ import SwiftUI
 import MapKit
 
 struct SingleView: View {
+	@Environment(\.managedObjectContext) private var context
+	
 	//get the variable
-	var mountain: Mountain
+	var mountain: MountainData
+	
 	var mountainIndex: UUID {
 		mountain.id ?? UUID()
 		}
@@ -37,7 +40,7 @@ struct SingleView: View {
 				Spacer()
 			VStack {
 				HStack {
-					Text(mountain.name ?? "Empty")
+					Text(mountain.peak ?? "Empty")
 					.font(.title3)
 				
 					BookmarkButton(isSet: (mountain.isFavorited)

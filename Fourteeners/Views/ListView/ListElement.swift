@@ -11,11 +11,18 @@ import SwiftUI
 struct ListElement: View {
 	var mountain: MountainData
 	@Environment(\.managedObjectContext) private var context
+	@FetchRequest(entity: MountainDB.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \MountainDB.id, ascending: true)])
+	private var result: FetchedResults<MountainDB>
+	
 	
 	
 	
 	var body: some View {
 		HStack {
+			if result.contains(where: MountainDB.ID == mountain.id) mountain.id {
+			}
+			
+			
 			CircleImage(image: Image(mountain.imageName ?? "none"), width:65)
 			Text(mountain.peak)
 			
