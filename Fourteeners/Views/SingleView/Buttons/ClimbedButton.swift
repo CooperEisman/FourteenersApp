@@ -11,6 +11,7 @@ import SwiftUI
 struct ClimbedButton: View {
 	@Binding var isSet: Bool
 	
+	
 	var body: some View {
 		Button(action: {
 					isSet.toggle()
