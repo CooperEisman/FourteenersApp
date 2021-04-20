@@ -13,10 +13,58 @@ struct SingleView: View {
 	@Environment(\.managedObjectContext) private var context
 	@EnvironmentObject var modelData: ModelData
 	
+	@FetchRequest(
+		sortDescriptors: [NSSortDescriptor(keyPath: \MountainDB.id, ascending: true)],
+		animation: .default)
+	private var mountainDBs: FetchedResults<MountainDB>
+	
 	var mountain: Mountain
 		var mountainIndex: Int {
 				modelData.mountains.firstIndex(where: { $0.id == mountain.id })!
+	}
+	private func updateStack(MountainStack: FetchedResults<MountainDB>) {
+		
+		var hasRan = false
+		
+		for mnt in MountainStack {
+			if(mnt.id == mountainIndex) {
+				mnt.isClimbed = modelData.mountains[mountainIndex].hasClimbed
+				mnt.isFavorited = modelData.mountains[mountainIndex].isBookmarked
+				
+				hasRan = true
 			}
+		}
+		
+		if (hasRan == false) {
+			let newMountain = MountainDB(context: context)
+			newMountain.id = Int64(mountainIndex)
+			newMountain.isClimbed = mountain.hasClimbed
+			newMountain.isFavorited = mountain.isBookmarked
+			
+			
+			do {
+				try context.save()
+			} catch {
+				// Replace this implementation with code to handle the error appropriately.
+				// fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+				let nsError = error as NSError
+				fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+			}
+		} else {
+			do {
+				try context.save()
+			} catch {
+				// Replace this implementation with code to handle the error appropriately.
+				// fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+				let nsError = error as NSError
+				fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+			}
+		}
+	}
+	
+	
+	
+	
 		
 		//Start View
     var body: some View {
@@ -42,9 +90,14 @@ struct SingleView: View {
 							Text(mountain.peak)
 							.font(.title3)
 						
-						BookmarkButton(isSet: $modelData.mountains[mountainIndex].isBookmarked)
+							BookmarkButton(isSet: $modelData.mountains[mountainIndex].isBookmarked).onChange(of: modelData.mountains[mountainIndex], perform: { value in
+								updateStack(MountainStack: mountainDBs)
+							})
 							
 						ClimbedButton(isSet: $modelData.mountains[mountainIndex].hasClimbed)
+							.onChange(of: modelData.mountains[mountainIndex], perform: { value in
+								updateStack(MountainStack: mountainDBs)
+							})
 						}
 					
 						Text(mountain.range + ", " + mountain.state)
@@ -103,7 +156,7 @@ struct SingleView: View {
 				.navigationTitle(mountain.peak)
 				.navigationBarTitleDisplayMode(.inline)
 			}
-		}
+}
 
 
 struct SingleView_Previews: PreviewProvider {
@@ -112,3 +165,4 @@ struct SingleView_Previews: PreviewProvider {
 			.environmentObject(ModelData())
     }
 }
+

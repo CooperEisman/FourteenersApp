@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Mountain: Hashable, Codable, Identifiable {
+struct Mountain: Hashable, Codable, Identifiable, Equatable {
 	var id: Int
 	var peak: String
 	var elevationFeet: Int

@@ -17,7 +17,7 @@ struct ClimbedButton: View {
 				}) {
 					Image(systemName: isSet ? "person.fill.checkmark" : "person.fill.xmark")
 						.foregroundColor(isSet ? Color.accentColor : Color.gray)
-				}
+		}
 	}
 }
 
