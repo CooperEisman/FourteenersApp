@@ -1,5 +1,6 @@
 # Fourteeners App
 All Development by Cooper Eisman
+This is a Swift app made in XCode. Run in XCode on Mac to run.
 
 
 Information Credits:
